@@ -1,0 +1,61 @@
+  h2 {
+  font-size: 3rem;
+  text-align: center;
+  padding: 4%;
+}
+
+.logo {
+  width: 50%;
+  height: auto;
+}
+
+/* The hero image */
+.hero-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/bg/hero_bg2.jpg");
+  /* height set */
+
+  /* position set  */
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.hero-text {
+  color: white;
+  text-align: center;
+  padding: 10% 5%;
+}
+
+/* container for highlghts */
+.container {
+  position: relative;
+}
+
+.highlights:hover {
+  box-shadow: 10px 10px 45px -5px #2c2c2c;
+}
+
+.text-block {
+  position: absolute;
+  bottom: 50px;
+  right: 50px;
+  background-color: #f7f1f1;
+  opacity: 0.7;
+  color: #000;
+  padding: 10px 20px;
+}
+
+/* footer icons style */
+.fab{
+  background-color: #000;
+  height: 50px;
+  width: 50px;
+  padding: 10px;
+  margin: 0 5px;
+  border-radius: 50%;
+}
+
+.fab:hover {
+  opacity: 0.5;
+}

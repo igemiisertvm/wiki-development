@@ -1,0 +1,21 @@
+html {
+  overflow-x: hidden;
+}
+
+body {
+  background-image: -webkit-linear-gradient(75deg, #faebd7 35%, #f7f1f1 65%);
+}
+
+.navbar-nav > li{
+  padding: 0 10px;
+  font-size: 1.2rem;
+}
+
+#content {
+  padding: 2% 12%;
+  font-size: 1.3rem;
+}
+
+#footer {
+  padding: 2% 10%;
+}
