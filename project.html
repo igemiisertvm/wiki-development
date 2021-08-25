@@ -9,6 +9,7 @@
   <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="custom-styles/main.css">
   <link rel="stylesheet" href="custom-styles/project.css">
+  <link rel="stylesheet" href="custom-styles/main.css">
   <link rel="stylesheet" href="font_awesome/css/all.css">
 </head>
 
@@ -76,20 +77,98 @@
   </section>
 
   <section class="container">
-    <!-- Side navigation -->
-    <div class="sidenav">
-      <a href="#">Introduction</a>
-      <a href="#">LMAO</a>
-      <a href="#">Clients</a>
-      <a href="#">Contact</a>
-    </div>
-
-    <!-- Page content -->
-    <div class="main">
-      ...
+    <!-- Side navbar -->
+    <div class="row">
+      <div class="col-lg-4 content-list">
+        <h2 style="margin: 0 0 20px;">Content</h2>
+        <input type="text" id="mySearch" onclick="myFunction()" placeholder="Search.." title="Type in a category">
+        <ul id="myMenu">
+          <li><a href="#intro">Introduction</a></li>
+          <li><a href="#">LMAO</a></li>
+          <li><a href="#rofl">ROFL</a></li>
+          <li><a href="#xoxo">XOXO</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-8">
+        <!-- Page content -->
+        <div id="project-content">
+          <h2 id="intro">Whenever I start working, I use magic</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nunc congue nisi vitae suscipit tellus. Arcu cursus euismod quis viverra nibh. Interdum velit laoreet id donec.
+            Ridiculus mus mauris vitae ultricies leo integer. Nunc mi ipsum faucibus vitae aliquet nec ullamcorper sit. Eu turpis egestas pretium aenean. Eget velit aliquet sagittis id consectetur purus. Mauris vitae ultricies leo integer malesuada
+            nunc
+            vel. Scelerisque fermentum dui faucibus in ornare quam viverra orci. Convallis aenean et tortor at risus.
+          </p>
+          <h2>Wait till the sorting hat speaks</h2>
+          <p>
+            Pretium lectus quam id leo in. Luctus venenatis lectus magna fringilla urna. Orci sagittis eu volutpat odio facilisis. Ornare aenean euismod elementum nisi. Venenatis tellus in metus vulputate eu scelerisque felis imperdiet proin. Massa
+            enim
+            nec dui nunc mattis enim ut tellus. Habitasse platea dictumst quisque sagittis purus sit amet volutpat. Vulputate odio ut enim blandit volutpat maecenas volutpat. Ac feugiat sed lectus vestibulum mattis ullamcorper. Eget arcu dictum
+            varius
+            duis at consectetur lorem. Felis bibendum ut tristique et egestas quis ipsum. Sollicitudin aliquam ultrices sagittis orci a scelerisque purus semper eget. Sollicitudin aliquam ultrices sagittis orci a scelerisque. Leo integer malesuada
+            nunc
+            vel risus commodo. Convallis aenean et tortor at risus viverra adipiscing at in. Molestie nunc non blandit massa enim nec dui nunc mattis. Pharetra convallis posuere morbi leo urna molestie at elementum. Ornare arcu odio ut sem nulla
+            pharetra
+            diam sit.
+          </p>
+          <div class="image-block">
+            <img src="images/sample_img.png" alt="sample image">
+            <p><strong>Figure 1.</strong> This is a placeholder image. I hope igem folks got better stuff.</p>
+          </div>
+          <h2>Those killing Unicorn are cursed</h2>
+          <p>
+            In tellus integer feugiat scelerisque. Risus at ultrices mi tempus imperdiet. Viverra maecenas accumsan lacus vel facilisis volutpat est. Egestas erat imperdiet sed euismod nisi porta. Lobortis scelerisque fermentum dui faucibus in ornare
+            quam viverra. Mi in nulla posuere sollicitudin aliquam ultrices sagittis. Tortor at risus viverra adipiscing at in tellus integer feugiat. Consequat ac felis donec et. Eget mi proin sed libero enim sed. Fermentum posuere urna nec
+            tincidunt
+            praesent. Ultrices sagittis orci a scelerisque. Id porta nibh venenatis cras sed felis eget velit aliquet. Euismod lacinia at quis risus sed vulputate. Lacus vel facilisis volutpat est velit. Eget aliquet nibh praesent tristique magna sit
+            amet. At volutpat diam ut venenatis tellus in metus vulputate.
+          </p>
+          <h2 id="rofl">Firebolt is old school now</h2>
+          <p>
+            Adipiscing at in tellus integer feugiat scelerisque varius. Nec feugiat nisl pretium fusce id velit ut tortor. Interdum consectetur libero id faucibus nisl tincidunt eget. Nisi quis eleifend quam adipiscing vitae proin sagittis nisl
+            rhoncus.
+            Neque egestas congue quisque egestas diam in arcu cursus. Ultrices neque ornare aenean euismod elementum nisi quis eleifend. Condimentum lacinia quis vel eros donec ac odio tempor orci. Elementum pulvinar etiam non quam lacus. Tincidunt
+            nunc
+            pulvinar sapien et ligula ullamcorper malesuada proin libero. Volutpat consequat mauris nunc congue nisi vitae suscipit. Faucibus purus in massa tempor nec feugiat nisl pretium. Scelerisque purus semper eget duis at tellus. Varius morbi
+            enim
+            nunc faucibus a pellentesque. Facilisis mauris sit amet massa. Vestibulum lorem sed risus ultricies. Arcu dictum varius duis at. Gravida arcu ac tortor dignissim. Sollicitudin tempor id eu nisl. Est ante in nibh mauris cursus mattis
+            molestie
+            a iaculis.
+          </p>
+          <h2 id="xoxo">The chamber of secrets was closed long ago</h2>
+          <p>
+            Mauris commodo quis imperdiet massa tincidunt nunc. Vulputate ut pharetra sit amet aliquam id. Magna etiam tempor orci eu lobortis elementum. Tellus integer feugiat scelerisque varius. Lectus mauris ultrices eros in. Quis eleifend quam
+            adipiscing vitae proin sagittis. Sed enim ut sem viverra aliquet eget. Eget egestas purus viverra accumsan in. Condimentum mattis pellentesque id nibh tortor id aliquet. Ut consequat semper viverra nam libero justo laoreet sit. Dignissim
+            suspendisse in est ante in nibh mauris. Viverra accumsan in nisl nisi scelerisque eu. Aliquam vestibulum morbi blandit cursus risus at ultrices mi. Eget nunc lobortis mattis aliquam.
+          </p>
+        </div>
+      </div>
     </div>
   </section>
 
+  <!-- Back to top button -->
+  <button type="button" class="btn btn-danger btn-floating btn-lg" id="btn-back-to-top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <section id="footer">
+    <div class="container">
+      <hr style="color: #2c2c2c;">
+      <div class="row" style="padding: 2%;">
+        <div class="col-md-8">
+          <p>&copy 2021 iGEM IISER TVM. All rights reserved.</p>
+        </div>
+        <div class="col-md-4" style=" display: block; margin: 0 auto;">
+          <a href="#"><i style="color: #4267B2;" class="fab fa-facebook-f fa-2x"></i></a>
+          <a href="#"><i style="color: #8a3ab9;" class="fab fa-instagram fa-2x"></i></a>
+          <a href="#"><i style="color: #1DA1F2;" class="fab fa-twitter fa-2x"></i></a>
+          <a href="#"><i style="color: #FF0000;" class="fab fa-youtube fa-2x"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script type="text/javascript" charset="utf-8" src="custom-scripts/project.js"></script>
   <script type="text/javascript" charset="utf-8" src="bootstrap/js/bootstrap.min.js"></script>
 
 </body>
