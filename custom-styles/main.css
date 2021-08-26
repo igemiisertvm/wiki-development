@@ -6,6 +6,25 @@ body {
   background-image: -webkit-linear-gradient(75deg, #faebd7 35%, #f7f1f1 65%);
 }
 
+/* The hero image */
+.hero-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/bg/hero_bg2.jpg");
+  /* height set */
+
+  /* position set  */
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.hero-text {
+  text-align: center;
+  color: white;
+  padding: 5%;
+}
+
 img {
   width: 100%;
   display: block;
@@ -23,7 +42,7 @@ img {
 }
 
 #content {
-  padding: 2% 12%;
+  padding: 2% 10%;
   font-size: 1.3rem;
 }
 
@@ -33,6 +52,7 @@ img {
 
 /* footer icons style */
 .fab{
+  display: inline-block;
   background-color: #000;
   height: 50px;
   width: 50px;

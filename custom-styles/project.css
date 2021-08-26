@@ -6,24 +6,6 @@ h2 {
   font-size: 2.5rem;
 }
 
-/* The hero image */
-.hero-image {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/bg/hero_bg2.jpg");
-  /* height set */
-
-  /* position set  */
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  position: relative;
-}
-
-.hero-text {
-  color: white;
-  text-align: center;
-  padding: 5%;
-}
-
 /* Style the search box */
 #mySearch {
   width: 100%;
