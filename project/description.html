@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Project | iGEM IISER TVM</title>
+  <link rel="icon" href="../images/logo_icon.ico">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="custom-styles/main.css">
+  <link rel="stylesheet" href="../custom-styles/project.css">
+  <link rel="stylesheet" href="../custom-styles/main.css">
+  <link rel="stylesheet" href="../font_awesome/css/all.css">
+</head>
+
+<body>
+  <section class="hero-image">
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="../index.html">
+          <img class="logo" src="../images/tvm_igem_logo2.png" alt="iGEM TVM logo" width="25%">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="team.html">Team</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Project
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="project.html">Description</a></li>
+                <li><a class="dropdown-item" href="model.html">The model</a></li>
+                <li><a class="dropdown-item" href="safety.html">Safety practices</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Application</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown">
+                Parts
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Hello world</a></li>
+                <li><a class="dropdown-item" href="#">Hello mars</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown">
+                Awards
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Hello world</a></li>
+                <li><a class="dropdown-item" href="#">Hello mars</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">HP</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="hero-text">
+      <h1 style="font-size: 6rem;">Description</h1>
+    </div>
+  </section>
+
+  <section class="container">
+    <!-- Side navbar -->
+    <div class="row">
+      <div class="col-lg-4 content-list">
+        <h2 style="margin: 0 0 20px;">Content</h2>
+        <input type="text" id="mySearch" onclick="myFunction()" placeholder="Search.." title="Type in a category">
+        <ul id="myMenu">
+          <li><a href="#bg">Literature survey</a></li>
+          <li><a href="#inspiration">Inspiration</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-8">
+        <!-- Page content -->
+        <div id="project-content">
+          <h2 id="intro">Literature survey</h2>
+          <p>
+            Fungi are eukaryotic organisms present ubiquitously in our surroundings. Though many fungal species are harmless, some fungi can wreak havoc in immunocompromised patients, and are hence referred to as “opportunistic” pathogens.
+            Opportunistic invasive fungal infections (IFIs), like mucormycosis, aspergillosis, and candidiasis, are becoming more prevalent with the onset of immunosuppressive therapies, organ transplantation, etc. In such settings, patients are
+            treated with immunosuppressant drugs to prevent graft rejection by the host, which weakens the body’s natural defence mechanisms against fungal pathogens. Similarly, patients suffering from diseases such as AIDS are also at high risk due
+            to their weakened immune systems. Recently, due to the COVID-19 pandemic, the number of cases of such infections have skyrocketed, especially in India.
+          </p>
+          <p>
+            Annually, over 150 million cases of fungal infections are reported globally, with upto 1.7 million deaths per year. IFIs also carry a 60-90% mortality rate among all ICU patients. Although cases of fungal infections have been on the rise,
+            it wasn’t until the wake of Covid-19 that this issue was brought up in the media. Hence fungal infections are sometimes also quoted as a silent crisis.
+          </p>
+          <p>
+            Fungi, being eukaryotes, share a greater degree of molecular similarity to humans than prokaryotic pathogens such as bacteria. Thus, it is difficult to find unique molecular drug targets which will selectively affect the fungal pathogen
+            and not the host. In the limited instances where such targets are available, there is always the looming threat of emergence of drug resistant fungal strains. Hence, developing strategies to tackle the emergence of drug resistant fungal
+            strains is currently of paramount importance.
+          </p>
+          <p>
+            It is for this reason that we chose to target chitin (a long chain polymer of N-acetylglucosamine), an essential component of the cell walls of all fungal species, notably absent from eukaryotic cells such as our own. Our molecular
+            weapons are ‘chitinases’, naturally occurring enzymes known to break down the glycosidic bonds in chitin. These are often present in bacterial and plant species, who use them as defence mechanisms against invading fungal pathogens (is
+            this correct, source?). However, given the diversity in fungal species and chitinase enzymes, selecting the appropriate chitinase on a case to case basis would be quite difficult. Our aim is to harness the powers of these naturally
+            occurring chitinase enzymes by generating strategic combinations of their functional domains, to combine their substrate specificities and possibly even activity. In this manner, we propose the development of a defined set of recombinant
+            chitinase enzymes, combining the bets attributes from the wild type enzymes and thus be more efficient.
+          </p>
+          <p>
+            Importantly, the chitin biosynthesis pathway in fungi is rather complex and involves the concerted action of several enzymes in a well-regulated fashion. Hence, we hypothesise that the probability of alteration of chitin structure by the
+            target organisms to avoid lysis by our chitinases is rather low. Our enzyme design combines functional domains from diverse chitinases, essentially combining the best attributes of each enzyme into one. The recombinant proteins are backed
+            up by an extensive literature survey supporting the feasibility of the project.
+          </p>
+          <p>
+            Therefore, we are developing a novel, eco-friendly and broad-spectrum therapeutic ‘MOLDEMORT’ to
+            tackle various invasive fungal infections. This solution has potential wide-ranging applications in healthcare, agriculture, and society alike.
+          </p>
+          <div class="image-block">
+            <img src="images/sample_img.png" alt="sample image">
+            <p><strong>Figure 1.</strong> This is a placeholder image. I hope igem folks got better stuff.</p>
+          </div>
+          <h2 id="inspiration">Inspiration</h2>
+          <p>
+            The project idea surfaced when a group of keen-eyed students observed fungal contamination in various locations, both inside and outside our campus. Background reading on pathogenic fungal species revealed to us that that Fusarium sp. (causes eye infections), Rhizopus sp. (causes mucormycosis in COVID-19 patients), Aspergillus sp. (causes aspergillosis in COVID-19 patients), etc. are widely present in many public places and often cause complications for immunocompromised patients. Armed with this information on the pathogenic nature of certain fungal species, we decided to generate pure cultures and try to identify the species present in our campus, and were able to identify species such as (add here).
+          </p>
+          <p>
+             We then grew interested in the question of how fungal infections caused by these species and others could be treated. A survey of literature revealed that the current antifungals used for treatment include various compounds such as amphotericin B (AmB), caspofungin, triazoles etc., but these antifungal agents have severe limitations due to lack of sufficient fungicidal effect and toxic side effects. Along with this, there have also been several reports of the emergence of drug resistant fungal strains due to the limited molecular targets of the existing drugs.
+          </p>
+          <p>
+            It was here that we decided to step in and try to design a novel antifungal agent targeting a nearly ubiquitous component of fungal cell walls, the polymer chitin. Our hypothesis is that lysis of chitin present in the cell walls of fungi by the naturally occurring chitinase enzymes will compromise the integrity of fungal cells, leading to their death. By harnessing the power of synthetic biology and protein engineering, the team IISER_TVM has engineered a chimeric chitinase to tackle the issue of invasive fungal infections.
+          </p>
+          <h2 id="">References</h2>
+          <ol>
+            <li>Ambati et. al. "Dectin-1-Targeted Antifungal Liposomes Exhibit Enhanced Efficacy | Msphere". Msphere, 2021</li>
+            <li>Kainz, Katharina et al. "Fungal Infections In Humans: The Silent Crisis". Microbial Cell, vol 7, no. 6, 2020, pp. 143-145. Shared Science Publishers OG, doi:10.15698/mic2020.06.718. Accessed 19 Aug 2021.</li>
+            <li>Bongomin, Felix et al. "Global And Multi-National Prevalence Of Fungal Diseases—Estimate Precision". Journal Of Fungi, vol 3, no. 4, 2017, p. 57. MDPI AG, doi:10.3390/jof3040057. Accessed 19 Aug 2021.</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Back to top button -->
+  <button type="button" class="btn btn-danger btn-floating btn-lg" id="btn-back-to-top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <section id="footer">
+    <div class="container">
+      <hr style="color: #2c2c2c;">
+      <div class="row" style="padding: 2%;">
+        <div class="col-md-8">
+          <p>&copy 2021 iGEM IISER TVM. All rights reserved.</p>
+        </div>
+        <div class="col-md-4" style=" display: block; margin: 0 auto;">
+          <a href="#"><i style="color: #4267B2;" class="fab fa-facebook-f fa-2x"></i></a>
+          <a href="#"><i style="color: #8a3ab9;" class="fab fa-instagram fa-2x"></i></a>
+          <a href="#"><i style="color: #1DA1F2;" class="fab fa-twitter fa-2x"></i></a>
+          <a href="#"><i style="color: #FF0000;" class="fab fa-youtube fa-2x"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script type="text/javascript" charset="utf-8" src="../custom-scripts/project.js"></script>
+  <script type="text/javascript" charset="utf-8" src="../bootstrap/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

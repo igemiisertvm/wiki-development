@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Project | iGEM IISER TVM</title>
+  <link rel="icon" href="../images/logo_icon.ico">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="custom-styles/main.css">
+  <link rel="stylesheet" href="../custom-styles/project.css">
+  <link rel="stylesheet" href="../custom-styles/main.css">
+  <link rel="stylesheet" href="../font_awesome/css/all.css">
+</head>
+
+<body>
+  <section class="hero-image">
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="../index.html">
+          <img class="logo" src="../images/tvm_igem_logo2.png" alt="iGEM TVM logo" width="25%">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="team.html">Team</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Project
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="project.html">Description</a></li>
+                <li><a class="dropdown-item" href="model.html">The model</a></li>
+                <li><a class="dropdown-item" href="safety.html">Safety practices</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Application</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown">
+                Parts
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Hello world</a></li>
+                <li><a class="dropdown-item" href="#">Hello mars</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown">
+                Awards
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Hello world</a></li>
+                <li><a class="dropdown-item" href="#">Hello mars</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">HP</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="hero-text">
+      <h1 style="font-size: 6rem;">Mathematical model</h1>
+    </div>
+  </section>
+
+  <section class="container">
+    <!-- Side navbar -->
+    <div class="row">
+      <div class="col-lg-4 content-list">
+        <h2 style="margin: 0 0 20px;">Content</h2>
+        <input type="text" id="mySearch" onclick="myFunction()" placeholder="Search.." title="Type in a category">
+        <ul id="myMenu">
+          <li><a href="#p1">Fungal growth models</a></li>
+          <li><a href="#p2">IC50 of an antifungal Nipagin</a></li>
+          <li><a href="#p3">Ligand receptor interaction</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-8">
+        <!-- Page content -->
+        <div id="project-content">
+          <p>
+            To approve our theory of designing a recombinant chitinase showing antifungal activity better compared to wild-type chitinases, several models have been developed and optimized. We have tried to model all the essential aspects that cover
+            our project.
+          </p>
+          <p>
+            These models give us an overview of the activity of the enzymes that could be verified through experiments. Nonetheless, they are a reliable source of information.
+          </p>
+          <h2 id="p1">Fungal growth models</h2>
+          <p>
+            The team has identified 7 fungal species through morphology and Sanger sequencing.
+            To check the activity of our chitinase enzymes, we need to determine the growth rate and lag phase of the species to compare it with the changed parameters when inflicted with the extracted protein.
+          </p>
+          <p>
+            To analyze the growth of fungus two different models were used:
+          </p>
+          <h3>Surface area based model</h3>
+          <p>
+            Fungus when grown on a Petri plate in a PDA (Potato dextrose agar) medium, tends to grow radially (given no contamination). The increasing radius and hence the increasing surface area is a parameter that can be used to check its rate of
+            growth over time.
+          </p>
+          <p>
+            The unidentified samples were inoculated in Petri plates and observed for 4-5 days to capture images of the growing fungus.<br>
+            <strong><em>Note: It was assumed that inoculum for all fungal species was of equal size.</em></strong><br>
+            The images were aligned and analyzed using the ImageJ software, where the radius and the corresponding area were measured.
+          </p>
+          <p>
+            The team has considered several growth models, which were mostly used for bacterial growth, yet can be used for fungal growth as well.[4]
+          </p>
+          <h4 id="inspiration">Gompertz</h4>
+          <p>
+            \begin{equation}
+            y=y_{0}+C(e^{-e^\frac{\mu e(\lambda-t)}{C+1}})
+            \end{equation}
+          </p>
+          <h4 id="inspiration">Logistic</h4>
+          <p>
+            \begin{equation}
+            y=y_{0}+\frac{C}{1+ e^(\frac{4\mu(\lambda-t)}{C+2})}
+            \end{equation}
+          </p>
+          <h4 id="inspiration">Richards</h4>
+          <p>
+            \begin{equation}
+            y=y_{0}+\frac{C}{(1+\beta e^{1+\beta}e^{((\frac{\mu}{e})(1+\beta)(1+\frac{1}{\beta})(\lambda-t))})^{\frac{1}{\beta}}}
+            \end{equation}
+          </p>
+          <em>
+            Where,
+            y0= Initial log count or absorbance<br>
+            y= Log count or absorbance at time t<br>
+            mu= Maximum growth rate<br />
+            lambda= Lag time<br />
+            C= Increase in log count or absorbance from y_0 to y_max<br />
+            beta= Model coefficient.<br />
+          </em>
+          <p>
+            These 3 equations were used to fit the curve and finding the unknown parameters. It has been calculated that the Gompertz model of growth gives us the least RMSE, hence proving to be the best model for our data.
+          </p>
+          <p>Few drawbacks of this method:</p>
+          <ol>
+            <li>The growth of the fungus is confirmed to the surface area Petri plate itself, once the fungus covers the plate, it starts growing volumetrically, making it difficult to analyze the growth.</li>
+            <li>Most of the fungus present on our campus are sporulating. The spread of spores within the plate causes several colonies to grow together, rendering the experiment useless, as different colonies superimpose on each other and no proper
+              radius is visible.</li>
+            <li>Sometimes, the fungal species may not grow radially, but in a non-uniform shape, increasing the manual labor of calculating the area.</li>
+          </ol>
+          <h3>O.D. based growth model</h3>
+          <p>
+            Scattering of light by a replicating population over time, and hence the changing OD is a good proxy for the growth of fungus instead of measuring its changing radius.[1] The fungal species were grown in a 96-well plate in a PDB (Potato
+            dextrose broth) medium, with spores suspended in PBS (Phosphate buffered saline), and observations were taken 4-5 days for an interval of 6 hours at 605nm.
+          </p>
+          <strong><em>Note: The assumption is made that the spore suspension has been uniformly distributed throughout the well.</em></strong>
+          <div class="">
+            <img src="../images/project/model/img1.png" alt="img">
+            <p><strong>Figure 1. </strong>bla bla bla...</p>
+          </div>
+          <div class="">
+            <img src="../images/project/model/img2.png" alt="img">
+            <p><strong>Figure 2. </strong>bla bla bla...</p>
+          </div>
+          <p>Limitations of this method:</p>
+          <ol>
+            <li>The fungus sometimes starts growing along the walls, hampering the OD.</li>
+            <li>The plate was kept in an incubator-cum-shaker at 28 degrees celsius, but the heat inside the incubator causes the media in the plate to evaporate and dry up. Hence, a humidity chamber needs to be made to minimize the evaporation of
+              media from the plate.</li>
+          </ol>
+          <em>
+            These growth models would be needed to compare the changing growth rate when the fungal species is administered with our designed chitinases.
+            A slower growth rate would prove our hypothesis of engineering a recombinant chitinase from wild-type sources.
+          </em>
+          <h2 id="p2">IC50 of an antifungal-Nipagin</h2>
+          <p>
+            Nipagin, being a methylparaben, is an antifungal agent, which is primarily used in cosmetics, food preservatives.[2]
+            We carried out an antifungal assay using Nipagin, to calculate its IC50 for the fungal species identified by the team. This very same experiment would be repeated with the purified protein of our interest to calculate its IC50 for
+            different fungal species. We wish to check the applicability of the models which calculate IC50 using Nipagin, which then would be used of our protein.
+          </p>
+          <p>
+            IC50 of the antifungal here would indicate how much of the chemical would be needed t inhibit, in vitro, the given fungal species[3].
+            Lower the IC50, better the efficiency of the antifungal.
+          </p>
+          <p>
+            An initial trial in doing the experiment, with antifungal concentration starting from 1000μg/mL, with serial dilutions of ½ till the final concentration of 0.488μg/mL gave us the IC50 as follows:
+          </p>
+          <ol>
+            <li>Rhizopus oryzae: 230.46μg/mL</li>
+            <li>Aspergillus versicolor: 288.916μg/mL</li>
+          </ol>
+          <p>
+            The experiment was repeated again to verify the results with different mathematical methods. Since the IC50 of Nipagin for both the fungus came about 200-300μg/mL range, the concentrations were started from 800μg/mL till 0.5μg/mL, with a
+            change of concentration by subtraction of 100μg/mL.
+          </p>
+          <p>The inhibition percentage has been calculated using 3 different methods:</p>
+          <ol>
+            <li>Method 1</li>
+            <li>Method 2</li>
+            <li>Method 3</li>
+          </ol>
+          <div class="">
+            <img src="../images/project/model/img3.png" alt="img">
+            <p>Data for <em>Aspergillus versicolor</em></p>
+          </div>
+          <p>
+            Where,<br>
+            S1 = Sample 1 <br>
+            S2 = Sample 2
+          </p>
+          <div class="">
+            <img src="../images/project/model/img4.png" alt="img">
+            <p><strong>Figure 4. </strong></p>
+          </div>
+          <div class="">
+            <img src="../images/project/model/img5.png" alt="img">
+            <p><strong>Figure 5. </strong>IC50 of Nipagin against A.versicolor using Method 1</p>
+          </div>
+          <div class="">
+            <img src="../images/project/model/img6.png" alt="img">
+            <p><strong>Figure 6. </strong>IC50 of Nipagin against A.versicolor using Method 2</p>
+          </div>
+          <div class="">
+            <img src="../images/project/model/img7.png" alt="img">
+            <p><strong>Figure 7. </strong>IC50 of Nipagin against A.versicolor using Method 3</p>
+          </div>
+          <div class="">
+            <img src="../images/project/model/img8.png" alt="img">
+            <p><strong>Figure 8. </strong>IC50 of Nipagin against A.versicolor using Method 3</p>
+          </div>
+          <div class="">
+            <img src="../images/project/model/img9.png" alt="img">
+            <p><strong>Figure 9. </strong>Data for <em>Rhizopus Oryzae</em></p>
+            <p>Where<br />S1 = Sample 1<br />S2 = Sample 2</p>
+          </div>
+          <div class="">
+            <img src="../images/project/model/img10.png" alt="img">
+            <p><strong>Figure 10. </strong></p>
+          </div>
+          <div class="">
+            <img src="../images/project/model/img11.png" alt="img">
+            <p><strong>Figure 11. </strong>IC50 of Nipagin against R.oryzae using Method 1</p>
+          </div>
+          <div class="">
+            <img src="../images/project/model/img12.png" alt="img">
+            <p><strong>Figure 12. </strong>IC50 of Nipagin against R.oryzae using Method 2</p>
+          </div>
+          <div class="">
+            <img src="../images/project/model/img13.png" alt="img">
+            <p><strong>Figure 13. </strong>IC50 of Nipagin against R.oryzae using Method 3</p>
+          </div>
+          <div class="">
+            <img src="../images/project/model/img14.png" alt="img">
+          </div>
+          <h2 id="p3">Ligand receptor interaction</h2>
+          <h2 id="p4">Protein estimation</h2>
+          <p>
+            The gene of our interest is expressed in the BL21 DE(3) strain of bacteria, whose expression will be under the inducible promoter. The inducer here is IPTG (Isopropyl β-d-1-thiogalactopyranoside).
+          </p>
+          <p>For the genomic part of <em>E. coli:</em></p>
+          <ol>
+            <li>Transcription of LacI mRNA</li>
+            <p>
+              $$\phi\xrightarrow{K_{tcI}}mRNA_{LacI}$$
+              Decay of LacI mRNA
+              $$mRNA_{LacI}\xrightarrow{K_{dmI}}\phi$$ <br />
+              \begin{equation}
+              \frac{d[mRNA_{LacI}]}{dt}=K_{tcI}-K_{dmI}[mRNA_{LacI}]
+              \end{equation}
+            </p>
+            <li>Translation of LacI</li>
+            <p>
+              $$mRNA_{LacI}\xrightarrow{K_{tl}}mRNA_{LacI}+LacI$$
+              Deacy of LacI
+              $$LacI\xrightarrow{K_{dpI}}\phi$$<br />
+              \begin{equation}
+              \frac{d[LacI]}{dt}=K_{tl}[mRNA_{LacI}]-K_{dpI}[LacI]
+              \end{equation}
+            </p>
+            <li>Formation of LacI and IPTG complex</li>
+            <p>
+              $$LacI+IPTG_{in}\xrightleftharpoons[K_{bI}]{K_{fI}}LacI-IPTG_{in}$$
+              \begin{equation}
+              \frac{d[LacI-IPTG_{in}]}{dt}=K_{fI}[LacI][IPTG_{in}]-K_{bI}[LacI-IPTG_{in}]
+              \end{equation}
+            </p>
+            <li>Passive diffusion of IPTG across the cell membrane of <em>E.coli</em></li>
+            <p>
+              $$IPTG_{ex}\xrightleftharpoons[K_{pdiff}]{K_{pdiff}}IPTG_{in}$$
+              \begin{equation}
+              \frac{d[IPTG_{in}]}{dt}=K_{pdiff}([IPTG_{in}-[IPTG_{ex}])+K_{fdiff}([LacY\_ IPTG_{ex}])
+              \end{equation}
+
+            </p>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Back to top button -->
+  <button type="button" class="btn btn-danger btn-floating btn-lg" id="btn-back-to-top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <section id="footer">
+    <div class="container">
+      <hr style="color: #2c2c2c;">
+      <div class="row" style="padding: 2%;">
+        <div class="col-md-8">
+          <p>&copy 2021 iGEM IISER TVM. All rights reserved.</p>
+        </div>
+        <div class="col-md-4" style=" display: block; margin: 0 auto;">
+          <a href="#"><i style="color: #4267B2;" class="fab fa-facebook-f fa-2x"></i></a>
+          <a href="#"><i style="color: #8a3ab9;" class="fab fa-instagram fa-2x"></i></a>
+          <a href="#"><i style="color: #1DA1F2;" class="fab fa-twitter fa-2x"></i></a>
+          <a href="#"><i style="color: #FF0000;" class="fab fa-youtube fa-2x"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script type="text/javascript" charset="utf-8" src="../custom-scripts/project.js"></script>
+  <script type="text/javascript" charset="utf-8" src="../bootstrap/js/bootstrap.min.js"></script>
+  <!-- MathJax for latex code -->
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</body>
+
+</html>
